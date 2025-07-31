@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class ProductImage : Audtiable<Guid>
+    public class ProductImage : Auditable<Guid>
     {
         public string Url { get; set; } = default!;
         public string? Alt { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Category : Audtiable<Guid>
+    public class Category : Auditable<Guid>
     {
         public string Name { get; set; } = default!;
         public string Slug { get; set; } = default!;
