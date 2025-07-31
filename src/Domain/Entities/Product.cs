@@ -25,6 +25,7 @@ namespace Domain.Entities
         public Guid? BrandId { get; set; }
         public Brand? Brand { get; set; }
 
+        public List<ProductImage> ProductImages { get; set; } = new();
         public List<Category> Categories { get; set; } = new();
     }
 }
