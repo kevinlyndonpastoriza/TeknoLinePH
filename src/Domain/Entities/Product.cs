@@ -21,5 +21,8 @@ namespace Domain.Entities
         public bool IsInStock { get; set; }
         public bool IsActive { get; set; }
         public bool IsFeatured { get; set; }
+
+        public Guid? BrandId { get; set; }
+        public Brand? Brand { get; set; }
     }
 }
