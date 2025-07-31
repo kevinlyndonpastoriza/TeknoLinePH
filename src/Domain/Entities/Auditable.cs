@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public abstract class Audtiable<T> : IAuditable<T>
+    public abstract class Auditable<T> : IAuditable<T>
     {
         [Key]
         public T Id { get; set; }
@@ -15,5 +15,5 @@ namespace Domain.Entities
         public string CreatedBy { get; set; }
         public DateTime? LastModifiedDate { get; set; }
         public string LastModifiedBy { get; set; }
-    }
+    }   
 }
